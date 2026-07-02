@@ -3,27 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My CI/CD Static Site</title>
+    <title>Cloud Journey</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Welcome to My CI/CD Project</h1>
-      <p>A static site deployed automatically via GitHub Actions</p>
+      <p>DevOps · Cloud</p>
+      <h1>Learning to ship with CI/CD</h1>
+      <p class="lead">
+        A small static site, deployed automatically on every push to main.
+      </p>
     </header>
 
     <main>
       <section>
-        <h2>About This Project</h2>
+        <h2>Where I'm at</h2>
         <p>
-          This site is part of a DevOps Intern project focused on building a
-          CI/CD pipeline for automated deployment.
+          Working through cloud and DevOps fundamentals - version control,
+          automated pipelines, and hosting on AWS. This repo is part of that
+          practice.
         </p>
+      </section>
+
+      <section>
+        <h2>Stack</h2>
+        <ul>
+          <li><strong>Git & GitHub</strong> - source control</li>
+          <li><strong>GitHub Actions</strong> - CI/CD on push to main</li>
+          <li><strong>AWS S3</strong> - static site hosting</li>
+          <li><strong>OIDC</strong> - auth without long-lived keys</li>
+        </ul>
       </section>
     </main>
 
     <footer>
-      <p>Built and deployed with Git, GitHub Actions & AWS S3</p>
+      <p>Deployed via GitHub Actions → AWS S3</p>
     </footer>
   </body>
 </html>

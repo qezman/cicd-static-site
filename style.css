@@ -1,3 +1,12 @@
+:root {
+  --bg: #0d0d0d;
+  --surface: #161616;
+  --border: #2a2a2a;
+  --text: #e8e8e8;
+  --muted: #888;
+  --accent: #7c6af7;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,28 +14,94 @@
 }
 
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
   line-height: 1.6;
-  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background: #6b2fa0;
-  color: white;
-  padding: 2rem;
-  text-align: center;
+  padding: 4rem 1.5rem 3rem;
+  max-width: 36rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+header p {
+  color: var(--accent);
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+header .lead {
+  color: var(--muted);
+  font-size: 1rem;
 }
 
 main {
-  padding: 2rem;
-  max-width: 700px;
+  flex: 1;
+  max-width: 36rem;
   margin: 0 auto;
+  width: 100%;
+  padding: 0 1.5rem 3rem;
+}
+
+section {
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+}
+
+section h2 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+section p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+section p + p {
+  margin-top: 0.75rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+ul li {
+  font-size: 0.9rem;
+  color: var(--muted);
+  padding-left: 1rem;
+  border-left: 2px solid var(--border);
+}
+
+ul li strong {
+  color: var(--text);
+  font-weight: 500;
 }
 
 footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem;
   text-align: center;
-  padding: 1rem;
-  background: #f2f2f2;
-  color: #555;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  color: var(--muted);
 }
