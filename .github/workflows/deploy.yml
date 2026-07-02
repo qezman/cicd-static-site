@@ -26,7 +26,7 @@ jobs:
       - name: Sanity check before deploy
         run: |
           if [ ! -s index.html ]; then
-            echo "index.html missing or empty — aborting deploy"
+            echo "index.html missing or empty - aborting deploy"
             exit 1
           fi
 
