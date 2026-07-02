@@ -23,6 +23,13 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ secrets.AWS_REGION }}
 
+      - name: Sanity check before deploy
+        run: |
+          if [ ! -s index.html ]; then
+            echo "index.html missing or empty - aborting deploy"
+            exit 1
+          fi
+
       - name: Sync files to S3
         run: |
           aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }} \
