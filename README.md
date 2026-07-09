@@ -107,7 +107,7 @@ Typical deploy time: **under 10 seconds** from push to live in S3.
 
 ## Full Project Documentation
 
-A complete day-by-day technical walkthrough - including every command run, every issue hit, and how each was resolved - is maintained separately as the project's internship deliverable: `https://polarized-boater-990.notion.site/CICD-Static-Site-393604d0a68980bd8a96e92400ebc05b`.
+A complete day-by-day technical walkthrough - including every command run, every issue hit, and how each was resolved - is maintained separately as the project's internship deliverable: https://polarized-boater-990.notion.site/CICD-Static-Site-393604d0a68980bd8a96e92400ebc05b
 
 ## Outcome
 
